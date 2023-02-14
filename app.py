@@ -119,7 +119,6 @@ class App:
         self.selection_window.show()
 
     def run(self):
-        # self.handle_login()
-        self.cli = pysjtu.create_client(username="923048992", password="Linzh8912.")
+        self.handle_login()
         self.handle_selection()
         sys.exit(self.app.exec_())
