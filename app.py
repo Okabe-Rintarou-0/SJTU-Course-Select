@@ -91,7 +91,7 @@ class App:
                     print("Failed, retry.")
                     pass  # retry
                 except Exception as e:
-                    raise e  # or handle other exceptions
+                    print(e)  # or handle other exceptions
             print(f"{self.course.name} 的抢课守护线程退出")
             self.signal.emit(self.course)
 
